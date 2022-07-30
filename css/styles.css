@@ -1,6 +1,44 @@
 @import url('https://fonts.maateen.me/solaiman-lipi/font.css');
 @import url('https://fonts.maateen.me/adorsho-lipi/font.css');
 
+* {
+    margin: 0;
+    border: 0;
+}
+
+.progress {
+    background: rgbs(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 48px;
+    width: 500px;
+}
+
+.progress.value {
+    animation: load 5s normal forwards;
+    box-shadow: 0 10px 48px -10px #fff;
+    border-radius: 100px;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0e6 0%, #7ee8fa 74%);
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
 body {
     font-family: 'Droid Serif', serif, 'SolaimanLipi', sans-serif;
     font-size: 14px;
@@ -27,6 +65,7 @@ p {
 .head {
     text-align: center;
     position: relative;
+    margin-top: 20px;
 
 
 }
@@ -267,6 +306,14 @@ p {
     filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
     mix-blend-mode: multiply;
     width: 100%;
+}
+
+footer {
+    background-color: #2f2f2f;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0px;
 }
 
 /*________________________________________________________________________________________________________________________________*/
